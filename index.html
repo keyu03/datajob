@@ -875,6 +875,14 @@
       .screenshots-row { grid-template-columns: 1fr; }
     }
 
+    /* ─── Contact email hover ─── */
+    #contact a[href^="mailto"]:hover {
+      border-color: var(--accent-1);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
     /* ─── Responsive ─── */
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; gap: 48px; }
@@ -916,6 +924,7 @@
     <li><a href="#features">功能</a></li>
     <li><a href="#how-it-works">運作方式</a></li>
     <li><a href="#compatibility">相容性</a></li>
+    <li><a href="#contact">合作洽詢</a></li>
   </ul>
   <a class="nav-cta" href="#cta">
     立即開始 →
@@ -1527,6 +1536,37 @@
         </a>
         <a class="btn-white-outline" href="#features">了解所有功能 →</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ── -->
+<section id="contact" style="padding:80px 0;background:var(--bg-1);border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="max-width:620px;margin:0 auto;text-align:center;">
+      <div class="section-tag">// CONTACT</div>
+      <h2 class="section-title">有合作想法？</h2>
+      <p style="color:var(--text-2);font-size:1rem;line-height:1.8;margin-bottom:36px;">
+        歡迎洽談技術合作、客製化開發或導入諮詢。<br>
+        無論是新功能需求、資料庫同步架構設計，都很樂意交流。
+      </p>
+      <a href="mailto:keyu03@gmail.com"
+         style="display:inline-flex;align-items:center;gap:10px;
+                padding:16px 36px;
+                background:var(--accent-1);
+                border-radius:12px;
+                text-decoration:none;
+                color:#fff;
+                font-size:1rem;font-weight:600;
+                box-shadow:0 4px 16px rgba(26,115,232,0.28);
+                transition:all 0.25s;">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        寫信給我
+      </a>
+      <p style="margin-top:20px;font-size:0.82rem;color:var(--text-muted);">通常於 1–2 個工作天內回覆</p>
     </div>
   </div>
 </section>
